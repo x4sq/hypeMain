@@ -14,6 +14,7 @@ client.on('guildMemberAdd', async(member) =>{
         .setMemberCount(member.guild.memberCount)
         .setGuildName(member.guild.name)
         .setAvatar(user.displayAvatarURL({ format: 'png' }))
+        .setText("message", "Welcome to {server}! Enjoy your time here in {server}")
         .setColor("border", "#8015EA")
         .setColor("username-box", "#8015EA")
         .setColor("discriminator-box", "#8015EA")
