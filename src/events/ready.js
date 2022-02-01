@@ -19,6 +19,10 @@ client.on('ready', (message) => {
         index++
     }, 10000)
 
+
+
+
+
     const clientDetails = {
         guilds: client.guilds.cache.size,
         users: client.users.cache.size,
