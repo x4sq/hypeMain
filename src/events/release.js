@@ -6,7 +6,10 @@ client.on('messageCreate', (message) => {
     const msgreply = 'DUALITY has no confirmed release date. Please see <#850479152275783701> for further information.'
     
 
-    if(messageContent.includes('release')) return message.reply(msgreply);
+    if(messageContent.includes('release')) return message.reply(msgreply).then(msg => {
+        const msgreply = msg
+        setTimeout(() => msg.delete(), 5000)
 
-;
+    })
+
 })
