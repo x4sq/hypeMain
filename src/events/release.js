@@ -8,7 +8,7 @@ client.on('messageCreate', (message) => {
 
     if(messageContent.includes('release')) return message.reply(msgreply).then(msg => {
         const msgreply = msg
-        setTimeout(() => msg.delete(), 5000)
+        setTimeout(() => msg.delete(), 1000 * 2)
 
     })
 
